@@ -95,6 +95,8 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        <p className="text-sm text-center sm:text-left font-sans">sans as roboto</p>
+        <p className="text-sm text-center sm:text-left font-serif">serif as popins</p>
       </footer>
     </div>
   );
