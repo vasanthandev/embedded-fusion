@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
+import {ThemeProvider} from "@/components/theme-provider";
 
 const roboto = Roboto({
     variable:"--font-sans",
@@ -27,9 +28,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${roboto.variable} ${poppins.variable} antialiased`}
+        className={` ${roboto.variable} ${poppins.variable} font-sans antialiased`}
       >
-        {children}
+      <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+      >
+          {children}
+      </ThemeProvider>
       </body>
     </html>
   );
