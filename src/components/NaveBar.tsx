@@ -33,10 +33,11 @@ const NaveBar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
     return (
-        <section className={""}>            
+        <section className={""}>
+            {/*<h1 className={"bg-blue-400 font-serif text-white text-xl"}>Feature Embedded</h1>*/}
             <nav
-                className={`w-full h-20   top-0  px-10 flex justify-between items-center z-50 backdrop-blur-md  duration-300 ${
-                    isScrolled ? "shadow-md bg-white/70 fixed" : "bg-transparent"
+                className={`w-full h-20 fixed top-0 px-2 lg:px-8 xl:px-[8%] py-4 flex justify-between items-center z-50 backdrop-blur-md  duration-300 ${
+                    isScrolled ? "shadow-md bg-white/70" : "bg-transparent"
                 }`}
             >
                 <a href={'#top'} className={"flex justify-end text-3xl gap-1 font-bold"}>
