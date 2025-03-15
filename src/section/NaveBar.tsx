@@ -1,18 +1,8 @@
 "use client"
-import React, {useEffect,useState} from 'react'
-import {Button} from "@/components/ui/button";
-import ThemeToggler from "@/components/ThemeToggler";
-import Image from "next/image";
-import { CiLocationArrow1 } from "react-icons/ci";
-import { CiMenuFries } from "react-icons/ci";
+import React, {useEffect, useState} from 'react'
+import {CiLocationArrow1, CiMenuFries} from "react-icons/ci";
 
-import {
-    Sheet,
-    SheetContent,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-} from "@/components/ui/sheet"
+import {Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger,} from "@/components/ui/sheet"
 
 const NaveBar = () => {
 
