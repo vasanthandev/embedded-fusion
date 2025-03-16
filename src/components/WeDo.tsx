@@ -93,7 +93,7 @@ function WeDo() {
                             </CardContent>
                             <div className="bg-orange-500 h-full flex justify-center">
                                 <Image
-                                    src={"/assert/feature_1.png"}
+                                    src={"/embedded-fusion/assert/feature_1.png"}
                                     alt={"feature one"}
                                     width={150}
                                     height={150}

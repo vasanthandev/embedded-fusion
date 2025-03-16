@@ -10,23 +10,23 @@ const projects = [
     {
         tittle:"This is title",
         description:"This is description",
-        image:"/assert/pro_1.jpg"
+        image:"/embedded-fusion/assert/pro_1.jpg"
     },{
         tittle:"This is title",
         description:"This is description",
-        image:"/assert/pro_2.jpg"
+        image:"/embedded-fusion/assert/pro_2.jpg"
     },{
         tittle:"This is title",
         description:"This is description",
-        image:"/assert/pro_3.jpg"
+        image:"/embedded-fusion/assert/pro_3.jpg"
     },{
         tittle:"This is title",
         description:"This is description",
-        image:"/assert/pro_4.jpg"
+        image:"/embedded-fusion/assert/pro_4.jpg"
     },{
         tittle:"This is title",
         description:"This is description",
-        image:"/assert/pro_5.jpg"
+        image:"/embedded-fusion/assert/pro_5.jpg"
     },
 ]
 

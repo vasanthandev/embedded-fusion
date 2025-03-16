@@ -48,10 +48,10 @@ function Count() {
                     We can provide Quick, Cost effective and First time Right solutions for your requirements.</p>
                 <div className="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {[
-                        { title: "Projects", image: "/assert/project_2.png", count: 100 },
-                        { title: "Clients", image: "/assert/client.svg", count: 100 },
-                        { title: "Experience", image: "/assert/experience.png", count: 20 },
-                        { title: "Employees", image: "/assert/employee.svg", count: 100 },
+                        { title: "Projects", image: "/embedded-fusion/assert/project_2.png", count: 100 },
+                        { title: "Clients", image: "/embedded-fusion/assert/client.svg", count: 100 },
+                        { title: "Experience", image: "/embedded-fusion/assert/experience.png", count: 20 },
+                        { title: "Employees", image: "/embedded-fusion/assert/employee.svg", count: 100 },
                     ].map((item, index) => (
 
                         <Card className={`md:mt-6 rounded-3xl shadow-lg  ${index % 2 == 0 ? 'shadow-blue-300': 'shadow-orange-300'}`} key={index}>
