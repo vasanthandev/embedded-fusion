@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
+import {ThemeProvider} from "@/components/theme-provider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const roboto = Roboto({
+    variable:"--font-sans",
+    subsets:["latin"],
+    weight:["400"]
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const poppins = Poppins({
+    subsets:["latin"],
+    weight:["400","500","600","700","800","900"],
+    variable:"--font-serif",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +27,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${roboto.variable} ${poppins.variable} font-sans antialiased`}
       >
-        {children}
+      <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          themes={["light", "dark", "system", "blue"]}
+          disableTransitionOnChange
+      >
+          {children}
+      </ThemeProvider>
       </body>
     </html>
   );
