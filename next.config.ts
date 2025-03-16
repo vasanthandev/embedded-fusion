@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
-  basePath:"/embedded-fusion",
+  // basePath:"/embedded-fusion",
   images: {
     unoptimized: true,
   },
