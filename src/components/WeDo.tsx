@@ -52,7 +52,7 @@ function WeDo() {
                         <Card className="shadow-lg lg:mt-10 shadow-blue-300 rounded-2xl overflow-hidden h-fit">
                             <div className="bg-sky-500 flex justify-center">
                                 <Image
-                                    src={"/assert/img_2.png"}
+                                    src={"/embedded-fusion/assert/img_2.png"}
                                     alt={"feature one"}
                                     width={150}
                                     height={150}
